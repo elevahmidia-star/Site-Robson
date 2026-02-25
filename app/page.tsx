@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 import { Camera, Video, Instagram, Youtube, MessageCircle, ExternalLink, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 
-const PROFILE_IMAGE = "https://picsum.photos/400/400"; // Replace with direct link from https://ibb.co/nMyy621h
+const PROFILE_IMAGE = "https://i.postimg.cc/L6sCwKGS/IMG-1979-JPG.jpg";
 const WHATSAPP_NUMBER = "5554999333799";
 
 const links = [
@@ -14,30 +14,6 @@ const links = [
     url: `https://wa.me/${WHATSAPP_NUMBER}`,
     icon: MessageCircle,
     primary: true,
-  },
-  {
-    title: "Portfólio de Fotografia",
-    description: "Conheça meus trabalhos mais recentes",
-    url: "#",
-    icon: Camera,
-  },
-  {
-    title: "Portfólio de Vídeo",
-    description: "Assista aos meus projetos audiovisuais",
-    url: "#",
-    icon: Video,
-  },
-  {
-    title: "Instagram",
-    description: "Acompanhe os bastidores e novidades",
-    url: "#",
-    icon: Instagram,
-  },
-  {
-    title: "YouTube",
-    description: "Tutoriais e vlogs do meu dia a dia",
-    url: "#",
-    icon: Youtube,
   }
 ];
 
