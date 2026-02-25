@@ -2,8 +2,8 @@ import type {Metadata} from 'next';
 import './globals.css'; // Global styles
 
 export const metadata: Metadata = {
-  title: 'Robson Quadros | Fotógrafo e Videomaker',
-  description: 'Portfólio e links de Robson Quadros - Fotógrafo e Videomaker',
+  title: 'Robson Quadros | Diretor de Estratégia & Marketing',
+  description: 'Estruturando negócios com estratégia, tráfego e posicionamento. Crescimento com método, não com sorte.',
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {

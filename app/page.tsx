@@ -66,10 +66,12 @@ export default function Home() {
             ROBSON QUADROS
           </h1>
           <h2 className="text-lg md:text-xl text-purple-400 font-medium tracking-wide mb-4 uppercase">
-            Fotógrafo & Videomaker
+            Diretor de Estratégia & Marketing
           </h2>
           <p className="max-w-md text-gray-400 text-sm md:text-base leading-relaxed">
-            Transformando momentos em memórias eternas através das lentes. Especialista em fotografia e produção audiovisual.
+            Estruturando negócios com estratégia, tráfego e posicionamento.
+            <br />
+            Crescimento com método, não com sorte.
           </p>
         </motion.header>
 
