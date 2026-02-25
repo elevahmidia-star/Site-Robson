@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robson Quadros | Fotógrafo e Videomaker</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: white;
+        }
+        
+        /* Animações de fundo */
+        @keyframes float1 {
+            0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.1; }
+            50% { transform: translate(50px, -30px) scale(1.2); opacity: 0.2; }
+        }
+        @keyframes float2 {
+            0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.1; }
+            50% { transform: translate(-30px, 50px) scale(1.1); opacity: 0.2; }
+        }
+        .bg-blob-1 { animation: float1 15s ease-in-out infinite; }
+        .bg-blob-2 { animation: float2 18s ease-in-out infinite; animation-delay: 2s; }
+        
+        /* Animações de entrada */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+            opacity: 0;
+        }
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.3s; }
+        .delay-3 { animation-delay: 0.4s; }
+        .delay-4 { animation-delay: 0.5s; }
+        .delay-5 { animation-delay: 0.6s; }
+        
+        /* Efeitos de Hover nos cards */
+        .link-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .link-card:hover { transform: translateY(-4px) scale(1.02); }
+    </style>
+</head>
+<body class="relative min-h-screen overflow-x-hidden flex flex-col items-center py-16 px-4 sm:px-6 lg:px-8">
+    
+    <!-- Efeitos de Fundo -->
+    <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+        <div class="bg-blob-1 absolute top-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-purple-900/30 blur-[100px]"></div>
+        <div class="bg-blob-2 absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] rounded-full bg-purple-600/20 blur-[120px]"></div>
+        <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] mix-blend-overlay"></div>
+    </div>
+
+    <div class="w-full max-w-xl relative z-10 flex flex-col items-center">
+        
+        <!-- Cabeçalho do Perfil -->
+        <header class="text-center mb-12 flex flex-col items-center w-full animate-fade-in">
+            <div class="relative mb-6 group">
+                <div class="w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-br from-purple-500/50 to-purple-900/50 backdrop-blur-sm relative overflow-hidden transition-transform duration-300 hover:scale-105 hover:rotate-2">
+                    <div class="w-full h-full rounded-full overflow-hidden border-4 border-[#050505] relative z-10 bg-zinc-900">
+                        <!-- Substitua o link abaixo pelo link direto da sua imagem -->
+                        <img src="https://picsum.photos/400/400" alt="Robson Quadros" class="w-full h-full object-cover" />
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-white mb-3">
+                ROBSON QUADROS
+            </h1>
+            <h2 class="text-lg md:text-xl text-purple-400 font-medium tracking-wide mb-4 uppercase">
+                Fotógrafo & Videomaker
+            </h2>
+            <p class="max-w-md text-gray-400 text-sm md:text-base leading-relaxed">
+                Transformando momentos em memórias eternas através das lentes. Especialista em fotografia e produção audiovisual.
+            </p>
+        </header>
+
+        <!-- Seção de Links -->
+        <div class="w-full space-y-4">
+            
+            <!-- Link 1 (Destaque - WhatsApp) -->
+            <a href="https://wa.me/5554999333799" target="_blank" rel="noopener noreferrer" class="animate-fade-in delay-1 link-card group block w-full relative overflow-hidden rounded-2xl border transition-all duration-500 ease-out shadow-lg cursor-pointer bg-purple-600/10 border-purple-500/50 hover:bg-purple-600/20 hover:border-purple-400 hover:shadow-purple-500/20">
+                <div class="relative z-10 p-5 md:p-6 flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-4 flex-1">
+                        <div class="p-3 rounded-xl flex-shrink-0 transition-colors duration-300 bg-purple-500/20 text-purple-400 group-hover:bg-purple-500/30 group-hover:text-purple-300">
+                            <!-- Ícone MessageCircle -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold transition-colors duration-300 flex items-center gap-2 text-purple-50 group-hover:text-white">Orçamento via WhatsApp</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mt-1">Vamos conversar sobre o seu projeto</p>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 text-gray-500 group-hover:text-purple-400 transition-colors duration-300">
+                        <!-- Ícone ChevronRight -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Link 2 (Fotografia) -->
+            <a href="#" target="_blank" rel="noopener noreferrer" class="animate-fade-in delay-2 link-card group block w-full relative overflow-hidden rounded-2xl border transition-all duration-500 ease-out shadow-lg cursor-pointer bg-[#141416] border-white/10 hover:border-purple-500/50 hover:shadow-purple-500/10">
+                <div class="relative z-10 p-5 md:p-6 flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-4 flex-1">
+                        <div class="p-3 rounded-xl flex-shrink-0 transition-colors duration-300 bg-white/5 text-gray-400 group-hover:bg-purple-500/10 group-hover:text-purple-400">
+                            <!-- Ícone Camera -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold transition-colors duration-300 flex items-center gap-2 text-white group-hover:text-purple-400">Portfólio de Fotografia</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mt-1">Conheça meus trabalhos mais recentes</p>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 text-gray-500 group-hover:text-purple-400 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Link 3 (Vídeo) -->
+            <a href="#" target="_blank" rel="noopener noreferrer" class="animate-fade-in delay-3 link-card group block w-full relative overflow-hidden rounded-2xl border transition-all duration-500 ease-out shadow-lg cursor-pointer bg-[#141416] border-white/10 hover:border-purple-500/50 hover:shadow-purple-500/10">
+                <div class="relative z-10 p-5 md:p-6 flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-4 flex-1">
+                        <div class="p-3 rounded-xl flex-shrink-0 transition-colors duration-300 bg-white/5 text-gray-400 group-hover:bg-purple-500/10 group-hover:text-purple-400">
+                            <!-- Ícone Video -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold transition-colors duration-300 flex items-center gap-2 text-white group-hover:text-purple-400">Portfólio de Vídeo</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mt-1">Assista aos meus projetos audiovisuais</p>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 text-gray-500 group-hover:text-purple-400 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Link 4 (Instagram) -->
+            <a href="#" target="_blank" rel="noopener noreferrer" class="animate-fade-in delay-4 link-card group block w-full relative overflow-hidden rounded-2xl border transition-all duration-500 ease-out shadow-lg cursor-pointer bg-[#141416] border-white/10 hover:border-purple-500/50 hover:shadow-purple-500/10">
+                <div class="relative z-10 p-5 md:p-6 flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-4 flex-1">
+                        <div class="p-3 rounded-xl flex-shrink-0 transition-colors duration-300 bg-white/5 text-gray-400 group-hover:bg-purple-500/10 group-hover:text-purple-400">
+                            <!-- Ícone Instagram -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold transition-colors duration-300 flex items-center gap-2 text-white group-hover:text-purple-400">Instagram</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mt-1">Acompanhe os bastidores e novidades</p>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 text-gray-500 group-hover:text-purple-400 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Link 5 (YouTube) -->
+            <a href="#" target="_blank" rel="noopener noreferrer" class="animate-fade-in delay-5 link-card group block w-full relative overflow-hidden rounded-2xl border transition-all duration-500 ease-out shadow-lg cursor-pointer bg-[#141416] border-white/10 hover:border-purple-500/50 hover:shadow-purple-500/10">
+                <div class="relative z-10 p-5 md:p-6 flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-4 flex-1">
+                        <div class="p-3 rounded-xl flex-shrink-0 transition-colors duration-300 bg-white/5 text-gray-400 group-hover:bg-purple-500/10 group-hover:text-purple-400">
+                            <!-- Ícone YouTube -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold transition-colors duration-300 flex items-center gap-2 text-white group-hover:text-purple-400">YouTube</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mt-1">Tutoriais e vlogs do meu dia a dia</p>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 text-gray-500 group-hover:text-purple-400 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Rodapé -->
+        <footer class="mt-16 text-center text-gray-600 text-sm animate-fade-in delay-5">
+            <p>© 2024 Robson Quadros. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
