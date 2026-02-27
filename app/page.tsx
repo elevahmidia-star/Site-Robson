@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 import { Camera, Video, Instagram, Youtube, MessageCircle, ExternalLink, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 
-const PROFILE_IMAGE = "https://i.postimg.cc/pVDNBHzT/e3e3e.png";
+const PROFILE_IMAGE = "https://i.postimg.cc/ZYdD5gJj/Sem-Titulo-1.png";
 const WHATSAPP_NUMBER = "5554999333799";
 
 const links = [
