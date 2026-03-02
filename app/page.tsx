@@ -11,13 +11,13 @@ const links = [
   {
     title: "Agendar Diagnóstico Estratégico",
     description: "Vamos estruturar o crescimento do seu negócio.",
-    url: `https://wa.me/${WHATSAPP_NUMBER}`,
+    url: `https://wa.me/5554999333799?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico%20para%20minha%20empresa.`,
     icon: MessageCircle,
     primary: true,
   },
   {
-    title: "Audiovisual para Eventos",
-    description: "Formaturas • Casamentos • 15 Anos • Corporativo",
+    title: "Cobertura Completa para Eventos",
+    description: "Foto e Vídeo • Formaturas • Casamentos • 15 Anos • Corporativo",
     url: `https://wa.me/5554999333799?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site%20e%20quero%20solicitar%20or%C3%A7amento%20para%20evento.`,
     icon: Video,
     primary: true,
@@ -93,12 +93,12 @@ export default function Home() {
             ROBSON QUADROS
           </h1>
           <h2 className="text-lg md:text-xl text-purple-300/80 font-medium tracking-wide mb-5 uppercase">
-            Diretor de Estratégia & Marketing
+            ESTRATÉGIA & PRODUÇÃO AUDIOVISUAL
           </h2>
           <p className="max-w-md text-gray-400 text-sm md:text-base leading-relaxed">
-            Estratégia, posicionamento e crescimento previsível.
+            Crescimento estruturado para empresas.
             <br />
-            Direção clara para empresas que querem evoluir.
+            Cobertura profissional para eventos.
           </p>
         </motion.header>
 
