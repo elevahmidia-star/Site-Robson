@@ -14,6 +14,13 @@ const links = [
     url: `https://wa.me/${WHATSAPP_NUMBER}`,
     icon: MessageCircle,
     primary: true,
+  },
+  {
+    title: "Audiovisual para Eventos",
+    description: "Formaturas • Casamentos • 15 Anos • Corporativo",
+    url: `https://wa.me/5554999333799?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site%20e%20quero%20solicitar%20or%C3%A7amento%20para%20evento.`,
+    icon: Video,
+    primary: true,
   }
 ];
 
@@ -127,7 +134,7 @@ export default function Home() {
                     }`}>
                       {link.title}
                     </h3>
-                    <p className="text-gray-400 text-sm leading-relaxed mt-1">
+                    <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mt-1">
                       {link.description}
                     </p>
                   </div>
