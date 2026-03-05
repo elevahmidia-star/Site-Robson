@@ -125,7 +125,7 @@ export default function PortfolioPage() {
           </p>
           <div className="w-full max-w-lg h-px bg-gradient-to-r from-transparent via-white/20 to-transparent my-2" />
           <p className="text-2xl md:text-3xl font-medium tracking-tight text-white max-w-2xl leading-tight">
-            &quot;Se teu concorrente aparece mais que tu, a gente arruma isso.&quot;
+            &quot;Se o seu concorrente aparece mais do que você, a gente arruma isso.&quot;
           </p>
         </motion.section>
 
@@ -199,3 +199,4 @@ export default function PortfolioPage() {
     </div>
   );
 }
+
