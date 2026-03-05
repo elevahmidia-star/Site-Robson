@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { Camera, Video, Instagram, Youtube, MessageCircle, ExternalLink, ChevronRight } from 'lucide-react';
+import { Camera, Video, Instagram, Youtube, MessageCircle, ExternalLink, ChevronRight, LayoutDashboard } from 'lucide-react';
 import Image from 'next/image';
 
 const PROFILE_IMAGE = "https://i.postimg.cc/ZYdD5gJj/Sem-Titulo-1.png";
@@ -20,6 +20,13 @@ const links = [
     description: "Foto e Vídeo • Formaturas • Casamentos • 15 Anos • Corporativo",
     url: `https://wa.me/5554999333799?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site%20e%20quero%20solicitar%20or%C3%A7amento%20para%20evento.`,
     icon: Video,
+    primary: true,
+  },
+  {
+    title: "Apresentação",
+    description: "Foto • Vídeo • Tráfego • Social Media",
+    url: "/apresentacao",
+    icon: LayoutDashboard,
     primary: true,
   }
 ];
@@ -104,12 +111,14 @@ export default function Home() {
 
         {/* Links Section */}
         <div className="w-full space-y-4">
-          {links.map((link, index) => (
+          {links.map((link, index) => {
+            const isExternal = link.url.startsWith("http");
+            return (
             <motion.a
               key={index}
               href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={isExternal ? "_blank" : undefined}
+              rel={isExternal ? "noopener noreferrer" : undefined}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 + index * 0.1, ease: [0.22, 1, 0.36, 1], duration: 0.6 }}
@@ -144,7 +153,7 @@ export default function Home() {
                 </div>
               </div>
             </motion.a>
-          ))}
+          )})}
         </div>
 
         {/* Strategic Line */}
